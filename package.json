@@ -1,0 +1,20 @@
+{
+  "name": "screen-recorder",
+  "description": "Screen Recorder",
+  "version": "0.0.1",
+  "author": "Raiza Rhamdan",
+  "scripts": {
+    "build": "electron-packager ./src ElectronScreenRecorder  --platform=win32 --arch=x64",
+    "build:tux": "electron-packager ./src ElectronScreenRecorder  --platform=linux --arch=x64",
+    "build:osx": "electron-packager ./src ElectronScreenRecorder  --platform=darwin --arch=x64",
+    "start": "electron ."
+  },
+  "main": "src/main.js",
+  "devDependencies": {
+    "electron-packager": "^13.0.1"
+  },
+  "dependencies": {
+    "domify": "^1.4.0",
+    "electron": "4.0.0"
+  }
+}

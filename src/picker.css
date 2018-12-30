@@ -1,0 +1,144 @@
+body {
+  background-color: #ffffff;
+  color: #37474f;
+  font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI';
+  padding:15px;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-direction: column;
+}
+
+.win-title {
+  -webkit-app-region: drag;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: #20262a;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.win-controll {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+  height: 100%;
+}
+.win-controll button {
+  -webkit-app-region: no-drag;
+  display: inline-block;
+  position: relative;
+  width: 45px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #a0a0a0;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
+}
+.win-controll button:not(:disabled):focus {
+  outline: none;
+}
+.win-controll button.window-close:not(:disabled):hover {
+  background-color: #e81123;
+  color: #fff;
+}
+.win-controll button.window-close:not(:disabled):hover:active {
+  background-color: #bf0f1d;
+  transition: none;
+}
+.win-controll button svg {
+  fill: currentColor;
+}
+.capturer-container::-webkit-scrollbar,
+.overflow-x::-webkit-scrollbar,
+.overflow-y::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  opacity: 0.75;
+}
+
+.capturer-container::-webkit-scrollbar-track,
+.overflow-x::-webkit-scrollbar-track,
+.overflow-y::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0 , .7);
+  opacity: 0.5;
+  transition: opacity 250ms;
+}
+
+.capturer-container::-webkit-scrollbar-thumb,
+.overflow-x::-webkit-scrollbar-thumb,
+.overflow-y::-webkit-scrollbar-thumb {
+  background-color: #171618;/*rgba(73, 65, 88, 0.7);*/
+  border: 1px solid rgba(49, 49, 49, 0.6);
+  border: 1px solid #000;
+  opacity: 0.5;
+  transition: background 250ms;
+}
+
+.capturer-container::-webkit-scrollbar-thumb:hover,
+.overflow-x::-webkit-scrollbar-thumb:hover,
+.overflow-y::-webkit-scrollbar-thumb:hover {
+  background-color: #24292e; /*rgba(100, 100, 100, 0.7);*/
+}
+.capturer-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.capturer-container {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 10px;
+}
+.row {
+  display:block;
+  width:100%;
+  text-align: center;
+}
+
+.capturer-list li {
+  list-style-type: none;
+  margin-right: 30px;
+  float: left;
+  padding: 10px;
+  border: 2px solid #F7F7F7;
+  margin: 10px;
+  /*height: 150px;*/
+}
+
+.capturer-list li a {
+  text-decoration:none;
+}
+
+.capturer-list img {
+  border: 1px solid #F7F7F7;
+  height: 98px;
+  width: 150px;
+}
+
+.capturer-list li:hover {
+  border-color: #666666;
+}
+
+.capturer-list span {
+  color: #37474f;
+  display: block;
+}
+
+.cr ul {
+  padding:0;
+}
