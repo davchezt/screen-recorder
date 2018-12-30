@@ -9,7 +9,7 @@ as `webm`.
 ## Install
 
 ```sh
-git clone
+git clone https://github.com/davchezt/screen-recorder.git
 
 cd screen-recorder
 
